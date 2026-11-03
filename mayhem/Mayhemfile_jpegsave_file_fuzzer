@@ -1,0 +1,8 @@
+project: savantenvs/libvips
+target: jpegsave_file_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/jpegsave_file_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/jpegsave_file_fuzzer
+    libfuzzer: true

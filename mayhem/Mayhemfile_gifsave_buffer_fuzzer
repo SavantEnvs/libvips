@@ -1,0 +1,8 @@
+project: savantenvs/libvips
+target: gifsave_buffer_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/gifsave_buffer_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/gifsave_buffer_fuzzer
+    libfuzzer: true

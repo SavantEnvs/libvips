@@ -1,0 +1,8 @@
+project: savantenvs/libvips
+target: radsave_buffer_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/radsave_buffer_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/radsave_buffer_fuzzer
+    libfuzzer: true

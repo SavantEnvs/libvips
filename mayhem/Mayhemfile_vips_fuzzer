@@ -1,0 +1,9 @@
+project: savantenvs/libvips
+target: vips_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/vips_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/vips_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/vips_fuzzer.dict
