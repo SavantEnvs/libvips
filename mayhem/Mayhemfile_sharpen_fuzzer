@@ -1,0 +1,8 @@
+project: savantenvs/libvips
+target: sharpen_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/sharpen_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/sharpen_fuzzer
+    libfuzzer: true
