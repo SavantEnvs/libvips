@@ -1,0 +1,8 @@
+project: savantenvs/libvips
+target: smartcrop_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/smartcrop_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/smartcrop_fuzzer
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: savantenvs/libvips
+target: mosaic_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/mosaic_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/mosaic_fuzzer
+    libfuzzer: true

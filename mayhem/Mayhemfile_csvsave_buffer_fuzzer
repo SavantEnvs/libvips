@@ -1,0 +1,8 @@
+project: savantenvs/libvips
+target: csvsave_buffer_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/csvsave_buffer_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/csvsave_buffer_fuzzer
+    libfuzzer: true
